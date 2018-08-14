@@ -1,17 +1,10 @@
-.header
-  %h2.header__title
-    Poemer
-  %ul.header__lists
-    %li.list
-      =link_to '#' do
-        サインインボタン
-    %li.list
-      =link_to '#' do
-        新規登録ボタン
-
+= render partial: './poems/header'
 .contents
   .maincontent
     .maincontents
+      .content__poems
+        .content__poems-text
+          文章が入ります
       %ul.content__lists
         %li.list
           =link_to '#' do
@@ -32,5 +25,3 @@
     .sidecontents
       .sidecontent__favorite
         お気に入りpoem一覧
-
-
