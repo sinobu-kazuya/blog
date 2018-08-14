@@ -26,5 +26,12 @@ html, body { height: 100vh; }
     position: absolute;
     top: 0;
     right: 0;
+    .list{
+      float: right;
+      padding: 0 10px;
+      height: 100%;
+      line-height: 8vh;
+      color: $wordcolor;
+    }
   }
 }

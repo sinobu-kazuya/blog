@@ -1,0 +1,19 @@
+.header
+  %h2.header__title
+    =link_to root_path do
+      Poemer
+  %ul.header__lists
+    - if user_signed_in?
+      %li.list
+        =link_to destroy_user_session_path, class: 'delete' do
+          ログアウト
+      %li.list
+        =link_to new_poem_path, class: 'post' do
+          投稿
+    - else
+      %li.list
+        =link_to new_user_session_path, class: 'post' do
+          ログイン
+      %li.list
+        =link_to new_user_registration_path, class: 'post' do
+          新規登録ボタン
